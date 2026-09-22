@@ -20,6 +20,7 @@ class WPCP_Plugin {
 	 * @return void
 	 */
 	public function run() {
-		// Runtime hooks will be registered here.
+		add_action( 'init', array( 'WPCP_Post_Types', 'register_resource' ) );
+		add_action( 'init', array( 'WPCP_Taxonomies', 'register_resource_type' ) );
 	}
 }

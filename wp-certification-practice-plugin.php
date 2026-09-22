@@ -16,6 +16,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 require_once plugin_dir_path( __FILE__ ) . 'includes/class-wpcp-activator.php';
 require_once plugin_dir_path( __FILE__ ) . 'includes/class-wpcp-deactivator.php';
 require_once plugin_dir_path( __FILE__ ) . 'includes/class-wpcp-plugin.php';
+require_once plugin_dir_path( __FILE__ ) . 'includes/class-wpcp-post-types.php';
+require_once plugin_dir_path( __FILE__ ) . 'includes/class-wpcp-taxonomies.php';
+require_once plugin_dir_path( __FILE__ ) . 'includes/class-wpcp-capabilities.php';
 
 register_activation_hook( __FILE__, array( 'WPCP_Activator', 'activate' ) );
 register_deactivation_hook( __FILE__, array( 'WPCP_Deactivator', 'deactivate' ) );
