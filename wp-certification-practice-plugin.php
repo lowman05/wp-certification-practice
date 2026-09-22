@@ -19,6 +19,8 @@ require_once plugin_dir_path( __FILE__ ) . 'includes/class-wpcp-plugin.php';
 require_once plugin_dir_path( __FILE__ ) . 'includes/class-wpcp-post-types.php';
 require_once plugin_dir_path( __FILE__ ) . 'includes/class-wpcp-taxonomies.php';
 require_once plugin_dir_path( __FILE__ ) . 'includes/class-wpcp-capabilities.php';
+require_once plugin_dir_path( __FILE__ ) . 'admin/class-wpcp-settings.php';
+require_once plugin_dir_path( __FILE__ ) . 'includes/class-wpcp-queries.php';
 
 register_activation_hook( __FILE__, array( 'WPCP_Activator', 'activate' ) );
 register_deactivation_hook( __FILE__, array( 'WPCP_Deactivator', 'deactivate' ) );
