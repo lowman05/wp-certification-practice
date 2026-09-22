@@ -1,0 +1,18 @@
+{"scripts": {
+  "lint": "phpcs",
+  "lint:fix": "phpcbf"
+},
+    "name": "lowman05/wp-certification-practice",
+    "description": "Practice plugin for advanced WordPress development and certification preparation",
+    "type": "wordpress-plugin",
+    "license": "GPL-2.0-or-later",
+    "require-dev": {
+        "wp-coding-standards/wpcs": "^3.4",
+        "dealerdirect/phpcodesniffer-composer-installer": "^1.2"
+    },
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    }
+}

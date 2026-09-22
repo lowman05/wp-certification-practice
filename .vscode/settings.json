@@ -1,0 +1,17 @@
+{
+  "files.eol": "\n",
+  "files.insertFinalNewline": true,
+
+  "intelephense.format.enable": false,
+
+  "phpSniffer.executablesFolder": "vendor\\bin",
+  "phpSniffer.run": "onSave",
+  "phpSniffer.logLevel": "info",
+
+  "[php]": {
+    "editor.formatOnSave": false,
+    "editor.insertSpaces": false,
+    "editor.tabSize": 4,
+    "editor.detectIndentation": false
+  }
+}
