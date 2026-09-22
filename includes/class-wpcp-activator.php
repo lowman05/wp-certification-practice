@@ -20,6 +20,9 @@ class WPCP_Activator {
 	 * @return void
 	 */
 	public static function activate() {
-		// Activation tasks will be added as the plugin develops.
+		WPCP_Post_Types::register_resource();
+		WPCP_Taxonomies::register_resource_type();
+		WPCP_Capabilities::add_capabilities();
+		flush_rewrite_rules();
 	}
 }
