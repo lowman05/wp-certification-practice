@@ -12,4 +12,20 @@
 
 	<rule ref="WordPress-Extra"/>
 	<rule ref="WordPress-Docs"/>
+	<rule ref="WordPress.WP.Capabilities">
+	<properties>
+		<property name="custom_capabilities" type="array">
+			<element value="edit_wpcp_resources"/>
+			<element value="edit_others_wpcp_resources"/>
+			<element value="publish_wpcp_resources"/>
+			<element value="read_private_wpcp_resources"/>
+			<element value="delete_wpcp_resources"/>
+			<element value="delete_private_wpcp_resources"/>
+			<element value="delete_published_wpcp_resources"/>
+			<element value="delete_others_wpcp_resources"/>
+			<element value="edit_private_wpcp_resources"/>
+			<element value="edit_published_wpcp_resources"/>
+		</property>
+	</properties>
+</rule>
 </ruleset>
