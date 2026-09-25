@@ -26,5 +26,9 @@ class WPCP_Plugin {
 		add_action( 'admin_menu', array( 'WPCP_Settings', 'add_settings_page' ) );
 		add_action( 'pre_get_posts', array( 'WPCP_Queries', 'set_resources_per_page' ) );
 		add_action( 'rest_api_init', array( 'WPCP_REST_API', 'register_routes' ) );
+		add_action(
+			WPCP_External_API::CRON_HOOK,
+			array( 'WPCP_External_API', 'refresh_latest_release' )
+		);
 	}
 }
