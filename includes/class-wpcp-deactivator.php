@@ -20,6 +20,8 @@ class WPCP_Deactivator {
 	 * @return void
 	 */
 	public static function deactivate() {
-		// Deactivation tasks will be added as the plugin develops.
+		wp_clear_scheduled_hook( WPCP_External_API::CRON_HOOK );
+
+		flush_rewrite_rules();
 	}
 }
