@@ -1,0 +1,37 @@
+{
+  "name": "wp-certification-practice-plugin",
+  "version": "1.0.0",
+  "description": "A hands-on WordPress plugin project for practicing advanced WordPress development concepts.",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "start": "wp-scripts start --experimental-modules",
+    "build": "wp-scripts build --experimental-modules",
+    "lint:js": "wp-scripts lint-js src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lowman05/wp-certification-practice.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lowman05/wp-certification-practice/issues"
+  },
+  "homepage": "https://github.com/lowman05/wp-certification-practice#readme",
+  "devDependencies": {
+    "@wordpress/scripts": "^36.0.0"
+  },
+  "dependencies": {
+    "@wordpress/block-editor": "^18.0.0",
+    "@wordpress/blocks": "^16.1.0",
+    "@wordpress/components": "^41.0.0",
+    "@wordpress/core-data": "^8.1.0",
+    "@wordpress/data": "^10.56.0",
+    "@wordpress/i18n": "^6.29.0",
+    "@wordpress/interactivity": "^6.56.0"
+  }
+}

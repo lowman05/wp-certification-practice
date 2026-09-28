@@ -30,5 +30,6 @@ class WPCP_Plugin {
 			WPCP_External_API::CRON_HOOK,
 			array( 'WPCP_External_API', 'refresh_latest_release' )
 		);
+		add_action( 'init', array( 'WPCP_Blocks', 'register_blocks' ) );
 	}
 }
