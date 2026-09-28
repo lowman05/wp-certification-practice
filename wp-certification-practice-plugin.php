@@ -23,6 +23,7 @@ require_once plugin_dir_path( __FILE__ ) . 'admin/class-wpcp-settings.php';
 require_once plugin_dir_path( __FILE__ ) . 'includes/class-wpcp-queries.php';
 require_once plugin_dir_path( __FILE__ ) . 'includes/class-wpcp-rest-api.php';
 require_once plugin_dir_path( __FILE__ ) . 'includes/class-wpcp-external-api.php';
+require_once plugin_dir_path( __FILE__ ) . 'includes/class-wpcp-blocks.php';
 
 register_activation_hook( __FILE__, array( 'WPCP_Activator', 'activate' ) );
 register_deactivation_hook( __FILE__, array( 'WPCP_Deactivator', 'deactivate' ) );

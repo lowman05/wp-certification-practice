@@ -1,0 +1,28 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "wpcp/resource-list",
+  "version": "0.1.0",
+  "title": "Resource List",
+  "category": "widgets",
+  "icon": "list-view",
+  "description": "Displays a list of Resources.",
+  "textdomain": "wp-certification-practice",
+  "attributes": {
+  "postsToShow": {
+    "type": "number",
+    "default": 5
+  },
+  "resourceType": {
+    "type": "string",
+    "default": ""
+  }
+},
+  "supports": {
+    "html": false,
+    "interactivity": true
+  },
+  "editorScript": "file:./index.js",
+  "render": "file:./render.php",
+  "viewScriptModule": "file:./view.js"
+}
